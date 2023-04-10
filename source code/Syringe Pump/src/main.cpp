@@ -19,7 +19,7 @@
 Header Inclusions
 *******************************************************************************/
 #include <main.h>
-#include <stepper.h>
+#include <master.h>
 
 void setup() {
   //begin serial for debugging
@@ -29,5 +29,5 @@ void setup() {
 }
 
 void loop() {
-  
+
 }
