@@ -19,13 +19,15 @@
 Header Inclusions
 *******************************************************************************/
 #include <main.h>
+#include <stepper.h>
 
 void setup() {
-  // put your setup code here, to run once:
+  //begin serial for debugging
+  Serial.begin(115200);
+
+  System_Init();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
 }
-
-void System_Ii

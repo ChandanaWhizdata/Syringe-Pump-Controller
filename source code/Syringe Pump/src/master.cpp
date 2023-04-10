@@ -33,5 +33,6 @@ Note:         to be called once before starting all the control functions
 ******************************************************************************/
 void System_Init(void)
 {
-    
+  //initializing and stepper setup
+  Stepper_Init();
 }
