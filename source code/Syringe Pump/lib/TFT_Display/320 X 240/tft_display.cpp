@@ -1,40 +1,42 @@
 /*******************************************************************************
-  Syringe Pump Master Control Source file 
+  TFT Display Source file 
 
   Company:
     Whizdata Solutions LLP.
 
   File Name:
-    main.cpp
+    tft_display.cpp
 
   Summary:
-    This file contains all the functions related to syringe pump control
+    This file contains all the functions related to TFT display control
 
   Description:
-    This file contains implementation of the master control functions
+    This file contains implementation of the display
  
  *******************************************************************************/
 
 /*******************************************************************************
 Header Inclusions
 *******************************************************************************/
-#include <master.h>
-#include <stepper.h>
 #include <tft_display.h>
+#include <my_buttons.h>
+#include <my_texts.h>
 
 /*******************************************************************************
 Functions
 *******************************************************************************/
 
 /******************************************************************************
-Function:     System_Init
-Description:  system initialization
+Function:     TFT_Init
+Description:  TFT display initialization
 Input:        nothing (uses some global variables)
-Output:       nothing (modifies some global variables)
-Note:         to be called once before starting all the control functions              
+Output:       nothing (modifies some global variables)            
 ******************************************************************************/
-void System_Init(void)
+void TFT_Init(void)
 {
-  //initializing and stepper setup
-  Stepper_Init();
+  tft.begin();
+  tft.setRotation(1);
+  tft.fillScreen(TFT_BLACK);
+  
+  Buttons_Init();
 }
