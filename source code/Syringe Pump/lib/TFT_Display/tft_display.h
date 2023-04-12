@@ -20,8 +20,8 @@
 Header Inclusions
 *******************************************************************************/
 #include <Arduino.h>
-#include <TFT_eSPI.h>               // Hardware-specific library
-#include <TFT_eWidget.h>            // Widget library
+#include "TFT_eSPI.h"               // Hardware-specific library
+#include "TFT_eWidget.h"            // Widget library
 
 /*******************************************************************************
 Definitions

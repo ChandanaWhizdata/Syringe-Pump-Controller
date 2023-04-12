@@ -1,4 +1,4 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
-    "cmake.sourceDirectory": "${workspaceFolder}/lib/TFT_Display/320 X 240/Library/TFT_eSPI"
+    "cmake.sourceDirectory": "${workspaceFolder}/lib/TFT_Display/Library/TFT_eSPI"
 }
